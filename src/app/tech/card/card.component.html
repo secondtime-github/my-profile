@@ -1,20 +1,13 @@
-
 <mat-card class="example-card mat-elevation-z8">
-    <img mat-card-image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React Icon">
+    <img mat-card-image [src]="item.imgURL" [alt]="item.name">
+    
     <mat-card-content>
-      <mat-card-title>React</mat-card-title>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
+      <mat-card-title>{{item.name}}</mat-card-title>
+      <p class="mat-h4">{{item.content}}</p>
     </mat-card-content>
 
-
-    <form action="https://secondtime-github.github.io/connect4/">
-
-        <button type="submit" href="" mat-button>Link</button>
-
+    <form *ngIf="item.link" target="_blank" [action]="item.link">
+        <button type="submit" href="" mat-raised-button color="accent">Link</button>
     </form>
-    
+
 </mat-card>

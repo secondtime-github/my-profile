@@ -1,4 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+export interface Item {
+  id: number, 
+  name: string,
+  imgURL: string,
+  link: string,
+  content: string
+}
 
 @Component({
   selector: 'app-card',
@@ -11,5 +19,8 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  @Input()
+  item: Item
 
 }

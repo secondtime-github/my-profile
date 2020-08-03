@@ -6,6 +6,10 @@
     z-index: 2;
 }
 
+.app-navbar span {
+  font-family: Rowdies;
+}
+
 .container {
     position: absolute;
     top: 0;

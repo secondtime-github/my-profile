@@ -1,5 +1,10 @@
+.tabs {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 app-card {
-    margin: 15px;
+    margin: 10px;
 }
 
 .items {
