@@ -1,18 +1,23 @@
-<app-navbar></app-navbar>
+<mat-toolbar class="mat-elevation-z8 app-navbar" color="warn">
+    <span class="mat-h2">My Profile</span>
+</mat-toolbar>
 
-
-
-
-<div class="container" style="margin-top: 56px;">
-    <app-tech></app-tech>
+<div class="container">
     <app-summary></app-summary>
-
-    <mat-divider></mat-divider>
-
-
+    <app-list></app-list>
+    <app-tech></app-tech>
+    <app-other></app-other>
+    <mat-toolbar class="footer" color="warn">
+        <span class="mat-h3">© 2020 Teki Ho · Created by Angular & Angular Material.</span>
+    </mat-toolbar>
 </div>
 
 
 
 
+
+
+
+
 <router-outlet></router-outlet>
+

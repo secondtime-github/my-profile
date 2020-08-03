@@ -1,9 +1,22 @@
-<mat-grid-list cols="3" rowHeight="200px">
-    <mat-grid-tile *ngFor="let tile of tiles"
-        [colspan]="tile.cols"
-        [rowspan]="tile.rows"
-        [style.background]="tile.color">
-      {{tile.text}}
-    </mat-grid-tile>
-  </mat-grid-list>
-  
+<mat-grid-list cols="3" rowHeight="500px">
+  <mat-grid-tile>
+    <div>
+      <img class="img" 
+      src="https://pic4.zhimg.com/344b4eda9_xl.jpg" 
+      alt="Avatar">
+      
+      <p class="mat-display-2">Teki Hou</p>
+      <p class="mat-display-1 sub">Developer</p>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile colspan='2'>
+    <div>
+      <p class="mat-display-1">Summary</p> 
+      <mat-divider></mat-divider>
+    <p class="mat-headline">{{text}}</p>
+    </div>
+    
+    <mat-divider></mat-divider>
+  </mat-grid-tile>
+</mat-grid-list>
+

@@ -1,12 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-export interface Tile {
-  color: string;
-  cols: number;
-  rows: number;
-  text: string;
-}
-
 @Component({
   selector: 'app-summary',
   templateUrl: './summary.component.html',
@@ -14,12 +7,12 @@ export interface Tile {
 })
 export class SummaryComponent implements OnInit {
 
-  tiles: Tile[] = [
-    {text: 'One', cols: 1, rows: 2, color: 'lightblue'},
-    {text: 'Two', cols: 2, rows: 1, color: 'lightgreen'},
-    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
-    {text: 'Four', cols: 1, rows: 1, color: '#DDBDF1'},
-  ];
+  text: string = "Teki is a software engineer living in Tokyo. " + 
+  "He has knowledge of Java, Swift and network programming. " +
+  "In his spare time, he created a few applications and scripts. " +
+  "He is also sharing videos teaching how to solve algorithm problems. " +
+  "Teki also loves Apple, MUJI and Hearth Stone. " +
+  "He is always keeping to learn new tech. "
 
   constructor() { }
 
